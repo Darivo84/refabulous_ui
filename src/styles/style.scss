@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  height: 8vh;
+  width: 100%;
+  color: rgb(220, 187, 0);
+  background-color: rgb(1, 19, 72);
+
+  .headerWrapper {
+    margin-left: 20px;
+
+    h3 {
+      font-weight: bold;
+    }
+  }
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+
+  .homeTitle {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(1, 19, 72);
+  }
+
+}
+
+.loginReg {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+
+  .img {
+    flex: 9;
+    background-image: url(../assets/img/placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form {
+    flex: 3;
+
+    .formComponent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding-left: 20px;
+
+      h3 {
+        text-align: center;
+        color: rgb(1, 19, 72);
+      }
+
+      .inputLabel {
+        font-size: 14px;
+        text-align: left;
+      }
+
+      .formInput {
+        width: 88% !important;
+        height: 50px;
+        margin: 20px 0px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+
+      .formButton {
+        width: 92% !important;
+        height: 50px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: rgb(220, 187, 0);
+        background-color: rgb(1, 19, 72);
+        cursor: pointer;
+      }
+
+      .account {
+        text-align: center;
+        text-decoration: none;
+        color: rgb(220, 187, 0);
+      }
+      .formButton:hover {
+        width: 92% !important;
+        height: 50px;
+        text-decoration: overline;
+        border-radius: 5px;
+        color: rgb(241, 232, 178);
+        background-color: rgb(2, 31, 117);
+        cursor: pointer;
+      }
+    }
+    
+  }
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 100%;
+  color: rgb(220, 187, 0);
+  background-color: rgb(50, 50, 50);
+
+  .footerWrapper {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    .footerLogo {
+      text-align: left;
+    }
+
+    .footerServices {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginReg {
+    .img {
+      flex: 9;
+      background-color: blue;
+      display: none;
+    }
+  }
+}
