@@ -1,3 +1,9 @@
+.homePage {
+  height: 100vh;
+  width:  100vw;
+  background-color: aqua;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -9,11 +15,38 @@
   background-color: rgb(1, 19, 72);
 
   .headerWrapper {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 98%;
+    margin: 20px;
 
     h3 {
       font-weight: bold;
     }
+
+    .headerButtonWrapper {
+      height: 100%;
+
+      button {
+        height: 100%;
+        width: 100px;
+        border: none;
+        font-weight: bold;
+        color: rgb(220, 187, 0);
+        background-color: rgb(1, 19, 72);
+      }
+      
+      button:hover, button:active, button:focus {
+        text-decoration: overline;
+        border-radius: 5px;
+        color: rgb(241, 232, 178);
+        background-color: rgb(2, 31, 117);
+        cursor: pointer;
+      }
+    }
+
   }
 }
 
@@ -23,13 +56,197 @@
   justify-content: center;
   height: 80vh;
   width: 100%;
+  
 
-  .homeTitle {
-    text-align: center;
-    font-size: 32px;
-    color: rgb(1, 19, 72);
+  .homeWrapper {
+    .homeTitleWrapper {
+      text-align: center;
+      margin-top: -40px;
+
+      .homeTitle {
+        text-align: center;
+        font-size: 46px;
+        margin-bottom: 20px;
+        color: rgb(1, 19, 72);
+      }
+
+      .homeCaption {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .homeBtnPanel {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .button {
+          width: 200px;
+          height: 50px;
+          font-weight: bold;
+          color: rgb(220, 187, 0);
+          background-color: rgb(1, 19, 72);
+          border: none;
+          border-radius: 5px;
+        }
+
+        .button:hover, .button:focus, .button:active {
+          text-decoration: overline;
+          border-radius: 5px;
+          color: rgb(241, 232, 178);
+          background-color: rgb(2, 31, 117);
+          cursor: pointer;
+        }
+      }
+    }
   }
+}
 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+
+  .aboutWrapper {
+    width: 95%;
+    height: 98%;
+
+    .aboutTitleWrapper {
+      text-align: center;
+      margin-top: 10px;
+
+      .aboutTitle {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: rgb(1, 19, 72);
+      }
+
+      .contentContainer {
+        display: flex;
+
+        .aboutLeft {
+          flex: 9;
+
+          .aboutText {
+            text-align: justify;
+            padding-right: 20px;
+          }
+        }
+
+        .aboutRight {
+          flex: 3;
+          align-items: flex-end;
+          background-image: url(../assets//img/about.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          .aboutImg {
+            flex: 1;
+            height: 400px;
+            width: 300px;
+          }
+        }
+  
+      }
+      .aboutTextParagraph {
+        text-align: justify;
+      }
+
+    }
+  }
+}
+
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+
+  .articlesWrapper {
+    width: 95%;
+    height: 98%;
+
+    .articlesTitleWrapper {
+      text-align: center;
+      margin-top: 10px;
+
+      .articlesTitle {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: rgb(1, 19, 72);
+
+      }
+      .articlesContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100% !important;
+
+        .articlesContentWrapper {
+          display: flex;
+
+          .articleLeft {
+            flex: 9;
+            background-color: blue;
+            height: 100%;
+            width: 100%;
+          }
+
+          .articleRight {
+            flex: 3;
+            background-color: yellow;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .articleLink {
+          text-decoration: none;
+          color: black;
+        }
+
+        .singleArticle {
+          height: 250px;
+          width: 350px;
+          border: 1px solid rgb(1, 19, 72);
+          margin: 10px;
+          border-radius: 5px;
+
+          .articleHeader {
+            text-align: left;
+            padding: 0px 10px;
+            border-bottom: 1px solid rgb(1, 19, 72);
+
+            h4 {
+              color: rgb(1, 19, 72);
+            }
+          }
+
+          .articleBody {
+            text-align: left;
+            padding: 0px 10px;
+
+            h5 {
+              font-size: 14px;
+            }
+
+            p {
+              font-size: 12px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+
+    }
+  }
 }
 
 .loginReg {
