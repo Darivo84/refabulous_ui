@@ -21,10 +21,7 @@ const Contact = () => {
               <h3>Contact Us</h3>
             </PageHeading>
             <form style={{ padding: '30px' }}>
-              {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100% !important' }}> */}
-              <FormComponent 
-              />
-              {/* </div> */}
+              <FormComponent />
             </form>
           </ContentLeft>
           <ContentRight>
