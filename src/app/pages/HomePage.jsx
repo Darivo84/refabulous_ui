@@ -14,6 +14,7 @@ import '../styles/styles.scss'
 const HomePage = () => {
   return (
     <>
+      <div className="page">
       <Nav />
       <PageContainer>
         <ContentWrapper>
@@ -58,6 +59,7 @@ const HomePage = () => {
         </ContentWrapper>
       </PageContainer>
       <Footer />
+      </div>
     </>
   )
 }

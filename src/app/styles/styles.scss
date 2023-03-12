@@ -93,7 +93,7 @@
 
       h3 {
         color: #FFFFFF;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -102,6 +102,7 @@
       height: 80% !important;
       
       p {
+        font-size: 13px;
         padding: 20px;
         text-align: justify;
 
@@ -111,6 +112,7 @@
       };
 
       h4 {
+        font-size: 14px;
         padding: 20px;
       }
       
@@ -180,7 +182,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(50, 50, 50);
-  position:absolute;
+  position: absolute;
   left:0;
   bottom:0;
   right:0;
@@ -389,7 +391,10 @@
   }
 
   .footerComponent {
-    display: none;
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
   }
 }
   
