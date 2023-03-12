@@ -1,19 +1,19 @@
-import PageContainer    from '../components/PageContainer'
-import Nav              from '../components/Nav'
-import ContentWrapper   from '../components/ContentWrapper'
-import PageHeading      from '../components/PageHeading'
-import ContentLeft      from '../components/ContentLeft'
-import ContentRight     from '../components/ContentRight'
-import Divider          from '../components/Divider'
-import RightPanelHeading from '../components/RightPanelHeading'
-import LogoWrapper      from '../components/LogoWrapper'
-import LogosPanel        from '../components/LogosPanel'
-import Footer           from '../components/Footer'
 import '../styles/styles.scss'
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import PageContainer from '../components/PageContainer';
 
 import Laundry from '../assets/siteImgs/laundry.jpg'
+import ContentWrapper from '../components/ContentWrapper';
+import ContentLeft from '../components/ContentLeft';
+import PageHeading from '../components/PageHeading';
+import ContentRight from '../components/ContentRight';
+import RightPanelHeading from '../components/RightPanelHeading';
+import Divider from '../components/Divider';
+import LogoWrapper from '../components/LogoWrapper';
+import LogosPanel from '../components/LogosPanel';
 
-const About = () => {
+const Test = () => {
   return (
     <>
       <Nav />
@@ -49,4 +49,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Test
